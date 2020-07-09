@@ -3,6 +3,7 @@
 
 #Quelle est le handle le plus court de cette liste ?
 #Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère)
+
 #Trie la liste de handle par taille des handle (les plus petits en premiers, les plus grands après)
 
 #Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)
@@ -17,7 +18,7 @@ puts " Combien commencent par une majuscule (première lettre juste après le @)
  array.each do |handle|
       if handle.match(/@[a-z]/)
         compteur += 1
-        end
+      end
     end
   puts "Il y en a #{compteur}"
 
@@ -37,7 +38,7 @@ puts " Combien commencent par une majuscule (première lettre juste après le @)
   puts " ========================================"
 
   puts "Trie la liste de handle par ordre alphabétique."
-  puts "Voici la liste de journalistes triés par ordre alphabétique : \n#{array.sort}"
+  puts "voila trier par ordre alphabetique #{array.sort}"
   
 
   puts"================================"
